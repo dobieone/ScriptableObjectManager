@@ -6,11 +6,9 @@ namespace MD.Editor.SOM
     public class SOManagerAttribute : Attribute
     {
         public string Name;
-        public string DefaultSaveLocation;
-        public SOManagerAttribute(string name = "", string defaultSaveLocation = "")
+        public SOManagerAttribute(string name = "")
         {
             Name = name;
-            DefaultSaveLocation = defaultSaveLocation;
         }
     }
 }

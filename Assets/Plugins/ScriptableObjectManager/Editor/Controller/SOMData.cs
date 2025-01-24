@@ -136,7 +136,7 @@ namespace MD.Editor.SOM.Data
                     {
                         if (attr is SOManagerAttribute a)
                         {
-                            AddItemToList(type, a.Name, a.DefaultSaveLocation);
+                            AddItemToList(type);
                         }
                     }
                 }
@@ -170,7 +170,7 @@ namespace MD.Editor.SOM.Data
             Data[asset.Type].Add(asset);
         }
 
-        private void AddItemToList(Type type, string name, string path)
+        private void AddItemToList(Type type)
         {
             var td = new TypeData(type);
 
