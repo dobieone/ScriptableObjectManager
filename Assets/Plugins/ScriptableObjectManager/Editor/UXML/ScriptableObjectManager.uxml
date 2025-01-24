@@ -1,0 +1,35 @@
+<UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/ScriptableObjectManager/Editor/UXML/USS/ScriptableObjectManager.uss?fileID=7433441132597879392&amp;guid=fc38466559a8b544d8af83ae976b04bd&amp;type=3#ScriptableObjectManager" />
+    <UnityEditor.UIElements.Toolbar class="unity-toolbar soe-toolbar">
+        <ui:Label text="Data Object" name="Message" class="unity-text-element unity-label soe-toolbar-label" />
+        <UnityEditor.UIElements.ToolbarButton text="Duplicate" name="DuplicateAssetButton" class="unity-text-element unity-toolbar-button soe-toolbar-button" />
+        <UnityEditor.UIElements.ToolbarButton text="Delete" name="DeleteAssetButton" class="unity-text-element unity-toolbar-button soe-toolbar-button" />
+    </UnityEditor.UIElements.Toolbar>
+    <ui:TwoPaneSplitView fixed-pane-initial-dimension="200" class="unity-two-pane-split-view">
+        <ui:VisualElement class="soe-main-type-list">
+            <UnityEditor.UIElements.Toolbar class="unity-toolbar soe-panel-toolbar">
+                <UnityEditor.UIElements.ToolbarSearchField name="SearchType" placeholder-text="Search Types" class="unity-search-field-base unity-toolbar-search-field soe-panel-search" />
+                <UnityEditor.UIElements.ToolbarButton name="TypeRefreshButton" class="unity-text-element unity-toolbar-button soe-refresh-button" />
+            </UnityEditor.UIElements.Toolbar>
+            <ui:ListView name="TypeListView" fixed-item-height="28" class="unity-collection-view unity-list-view soe-listview" />
+        </ui:VisualElement>
+        <ui:VisualElement>
+            <ui:TwoPaneSplitView fixed-pane-initial-dimension="250" class="unity-two-pane-split-view">
+                <ui:VisualElement>
+                    <UnityEditor.UIElements.Toolbar class="unity-toolbar soe-panel-toolbar">
+                        <UnityEditor.UIElements.ToolbarSearchField name="SearchAsset" placeholder-text="Search Assets" class="unity-search-field-base unity-toolbar-search-field soe-panel-search" />
+                        <UnityEditor.UIElements.ToolbarButton name="AssetRefreshButton" class="unity-text-element unity-toolbar-button soe-refresh-button" />
+                        <UnityEditor.UIElements.ToolbarButton name="AssetAddButton" class="unity-text-element unity-toolbar-button soe-add-button" />
+                    </UnityEditor.UIElements.Toolbar>
+                    <ui:ListView item-template="project://database/Assets/ScriptableObjectManager/Editor/UXML/AssetListItem.uxml?fileID=9197481963319205126&amp;guid=1d9cf10fe8bd6d240ae254192e721b37&amp;type=3#AssetListItem" name="AssetListView" fixed-item-height="28" class="unity-collection-view unity-list-view soe-listview" />
+                </ui:VisualElement>
+                <ui:VisualElement name="InspectorContainer">
+                    <ui:ScrollView name="Inspector" class="soe-editor" style="flex-grow: 1;" />
+                    <UnityEditor.UIElements.Toolbar name="InspectorToolbar" class="soe-inspector-toolbar">
+                        <UnityEditor.UIElements.ToolbarButton name="InspectorPath" class="soe-inspector-toolbar-path" />
+                    </UnityEditor.UIElements.Toolbar>
+                </ui:VisualElement>
+            </ui:TwoPaneSplitView>
+        </ui:VisualElement>
+    </ui:TwoPaneSplitView>
+</UXML>
