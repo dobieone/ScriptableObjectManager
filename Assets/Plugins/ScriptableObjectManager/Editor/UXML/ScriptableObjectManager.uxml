@@ -1,5 +1,5 @@
 <UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="True">
-    <Style src="project://database/Assets/ScriptableObjectManager/Editor/UXML/USS/ScriptableObjectManager.uss?fileID=7433441132597879392&amp;guid=fc38466559a8b544d8af83ae976b04bd&amp;type=3#ScriptableObjectManager" />
+    <Style src="project://database/Assets/Plugins/ScriptableObjectManager/Editor/UXML/USS/ScriptableObjectManager.uss?fileID=7433441132597879392&amp;guid=fc38466559a8b544d8af83ae976b04bd&amp;type=3#ScriptableObjectManager" />
     <UnityEditor.UIElements.Toolbar class="unity-toolbar soe-toolbar">
         <ui:Label text="Data Object" name="Message" class="unity-text-element unity-label soe-toolbar-label" />
         <UnityEditor.UIElements.ToolbarButton text="Duplicate" name="DuplicateAssetButton" class="unity-text-element unity-toolbar-button soe-toolbar-button" />
@@ -21,7 +21,7 @@
                         <UnityEditor.UIElements.ToolbarButton name="AssetRefreshButton" class="unity-text-element unity-toolbar-button soe-refresh-button" />
                         <UnityEditor.UIElements.ToolbarButton name="AssetAddButton" class="unity-text-element unity-toolbar-button soe-add-button" />
                     </UnityEditor.UIElements.Toolbar>
-                    <ui:ListView item-template="project://database/Assets/ScriptableObjectManager/Editor/UXML/AssetListItem.uxml?fileID=9197481963319205126&amp;guid=1d9cf10fe8bd6d240ae254192e721b37&amp;type=3#AssetListItem" name="AssetListView" fixed-item-height="28" class="unity-collection-view unity-list-view soe-listview" />
+                    <ui:ListView name="AssetListView" fixed-item-height="28" class="unity-collection-view unity-list-view soe-listview" />
                 </ui:VisualElement>
                 <ui:VisualElement name="InspectorContainer">
                     <ui:ScrollView name="Inspector" class="soe-editor" style="flex-grow: 1;" />
